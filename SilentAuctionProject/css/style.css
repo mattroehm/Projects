@@ -1,0 +1,213 @@
+/* ===== Silent Auction – App State Black & Gold Theme ===== */
+
+/* Color variables */
+:root{
+  --gold: #FFCC00;
+  --gold-dark: #D4A500;
+  --black: #111111;
+  --bg: #ffffff;
+  --muted: #666666;
+  --line: #d0d0d0;
+
+  /* Accent button colors */
+  --blue: #007bff;
+  --blue-dark: #0063c7;
+  --red: #cc0000;
+  --red-dark: #a40000;
+}
+
+/* Global reset */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background: var(--bg);
+  line-height: 1.45;
+}
+
+/* Centering wrapper used on all pages */
+.container {
+  width: 92%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 0 40px;
+}
+
+/* ===== HEADERS / TITLES ===== */
+
+.site-title {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 10px 0 18px;
+  letter-spacing: .2px;
+  text-align: center;
+  color: var(--gold);
+  text-shadow: 0 0 2px #333;
+}
+
+h2, h3 {
+  margin-top: 0;
+  color: var(--black);
+}
+
+.section-line {
+  border-top: 1px solid var(--line);
+  margin: 18px 0;
+}
+
+/* ===== NAVBAR (top of Part 1 page) ===== */
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 3px solid var(--gold);
+  padding: 10px 0 12px;
+  margin-bottom: 26px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: var(--gold);
+  color: var(--black);
+  border: 2px solid var(--gold-dark);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.navbar a:hover {
+  background: var(--gold-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ===== HOME PAGE BIG BUTTONS ===== */
+
+.btn-large {
+  display: block;
+  width: 100%;                /* wide bars like your friend */
+  max-width: 820px;
+  margin: 14px auto;
+  text-align: center;
+  background: var(--black);   /* App State black */
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--gold);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn-large:hover {
+  background: var(--gold);
+  color: var(--black);
+  transform: translateY(-1px);
+}
+
+/* ===== TABLES (directory lists) ===== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 24px;
+  font-size: 14px;
+}
+
+th {
+  background: var(--black);       /* black header bar */
+  color: var(--gold);             /* gold text */
+  padding: 8px 10px;
+  font-weight: 800;
+  border: 1px solid var(--gold-dark);
+  text-align: left;
+}
+
+td {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+}
+
+/* zebra striping for readability */
+tr:nth-child(even) td {
+  background: #f4f4f4;
+}
+
+tr:nth-child(odd) td {
+  background: #ffffff;
+}
+
+/* ===== ACTION BUTTONS IN TABLES ===== */
+
+.action-btn {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  min-width: 64px;
+}
+
+/* Update buttons – gold */
+.btn-update {
+  background: var(--gold-dark);
+}
+.btn-update:hover {
+  background: #b28900;
+}
+
+/* Delete buttons – red */
+.btn-delete {
+  background: var(--red);
+}
+.btn-delete:hover {
+  background: var(--red-dark);
+}
+
+/* Blue buttons – Add Item, Make Letter, Mark Receipt, Make Receipt */
+.btn-blue {
+  background: var(--blue);
+}
+.btn-blue:hover {
+  background: var(--blue-dark);
+}
+
+/* ===== SMALL TEXT LINKS (if used anywhere) ===== */
+
+.action-link {
+  display: inline-block;
+  margin: 6px 0 10px;
+  font-weight: 700;
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+
+.action-link:hover {
+  color: var(--black);
+}
+
+/* ===== ERROR MESSAGES & FOOTER ===== */
+
+.error {
+  color: #cc0000;
+  font-weight: 800;
+  margin: 8px 0 14px;
+}
+
+.footer {
+  border-top: 2px solid var(--gold);
+  margin-top: 28px;
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
